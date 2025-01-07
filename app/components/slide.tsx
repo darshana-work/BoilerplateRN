@@ -19,8 +19,8 @@ type SlideProps = {
 const Slide = ({item}: SlideProps) => {
   return (
 
-    <View style={{backgroundColor: '#fff'}}>
-      <SafeAreaView style={{backgroundColor: '#fff'}}>
+    <View style={{backgroundColor: COLORS.white}}>
+      <SafeAreaView style={{backgroundColor: COLORS.white}}>
         <Text
           style={{
             marginTop: 50,

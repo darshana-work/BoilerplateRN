@@ -24,7 +24,7 @@ const Login = ({navigation}) => {
   const authContext = useContext(AuthContext);
   const isFocused = useIsFocused();
 
-  console.log('Login')
+  console.log('Login');
   useEffect(() => {
     if (isFocused) {
       reset();
@@ -43,7 +43,7 @@ const Login = ({navigation}) => {
   });
 
   const {control, handleSubmit, reset} = useForm({
-    mode: "onTouched",
+    mode: 'onTouched',
     defaultValues: {
       email: '',
       password: '',
@@ -53,7 +53,7 @@ const Login = ({navigation}) => {
 
   const onSubmit = async (data: any) => {
     console.log(data);
-    Alert.alert('Email -> '+data.email, 'Password ->'+ data.password)
+    Alert.alert('Email -> ' + data.email, 'Password ->' + data.password);
   };
 
   const handleForgotPassword = () => {
@@ -99,13 +99,13 @@ const Login = ({navigation}) => {
         </TouchableOpacity>
       </View>
       <View style={styles.registerSection}>
-          <Text style={styles.noAccountText}>Don't have an account?</Text>
-          <TouchableOpacity
-            style={styles.registerButton}
-            onPress={handleRegister}>
-            <Text style={styles.registerText}>Sign up</Text>
-          </TouchableOpacity>
-        </View>
+        <Text style={styles.noAccountText}>Don't have an account?</Text>
+        <TouchableOpacity
+          style={styles.registerButton}
+          onPress={handleRegister}>
+          <Text style={styles.registerText}>Sign up</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: '100%',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: COLORS.white,
     flexDirection: 'column',
   },
   logoContainer: {
@@ -136,8 +136,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   forgotPasswordButton: {
-    alignSelf:'flex-end',
-    marginTop: 10
+    alignSelf: 'flex-end',
+    marginTop: 10,
   },
   forgotPasswordText: {
     color: COLORS.black,
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: 16,
     fontWeight: 'bold',
-    letterSpacing: 1
+    letterSpacing: 1,
   },
   noAccountText: {
     color: COLORS.black,

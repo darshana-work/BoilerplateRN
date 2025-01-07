@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   activityIndicatorWrapper: {
     flexDirection: 'row',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: COLORS.white,
     height: 100,
     width: '50%',
     borderRadius: 2,
