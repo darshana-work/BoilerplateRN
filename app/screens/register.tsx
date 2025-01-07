@@ -209,12 +209,14 @@ const styles = StyleSheet.create({
     flex: 1,
     color: COLORS.white,
     justifyContent: 'space-between',
-    paddingHorizontal: 15,
+    backgroundColor: COLORS.white,
   },
   contentContainer: {
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'space-between',
+    backgroundColor: COLORS.white,
+    marginHorizontal: 15
   },
   headerContainer: {
     width: '100%',
